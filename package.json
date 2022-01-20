@@ -1,0 +1,28 @@
+{
+  "name": "cypress_basico",
+  "version": "1.0.0",
+  "description": "Curso de Cypress Basico",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress run "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LarrysaFigueiredo/Cypress_Basico.git"
+  },
+  "keywords": [
+    "cypress",
+    "test",
+    "automation",
+    "e2e"
+  ],
+  "author": "Larrysa Figueiredo",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LarrysaFigueiredo/Cypress_Basico/issues"
+  },
+  "homepage": "https://github.com/LarrysaFigueiredo/Cypress_Basico#readme",
+  "dependencies": {
+    "cypress": "^9.3.1"
+  }
+}
