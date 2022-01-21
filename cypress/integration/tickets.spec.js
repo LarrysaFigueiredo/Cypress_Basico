@@ -26,5 +26,24 @@ describe("Tickets", () => {
         cy.get("#friend").uncheck();
     });
 
-    it("has 'TICKETBOX' header's heading", () => {});
+    //um teste para ser considerado um teste ele tem que ter uma verificação, ação de campos obrigatórios.
+    it ("has 'TICKETBOX' header's heading", () => {
+        cy.get("header h1").should("contain", "TICKETBOX");
+    });
+
+    it.only ("alerts on invalid email", () => {
+        cy.get("#email")
+        .as("email") //para não ficar repetindo o css
+        .type("larrysa.figueiredo-gmail.com");
+
+        cy.get("#email.invalid").should("exist");
+
+        cy.get("@email")
+        .clear()
+        .type("larrysa.figueiredo@gmail.com");
+
+        cy.get("#email.invalid").should("not.exist");
+    });
+
+    
 });
