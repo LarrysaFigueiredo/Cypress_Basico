@@ -9,5 +9,9 @@ describe("Tickets", () => {
         cy.get("#signature").type("LFigueiredo");
     });
 
+    it("select two tickets", () => {
+        cy.get("#ticket-quantity").select("2");
+    }); 
+    
     it("has 'TICKETBOX' header's heading", () => {});
 });
